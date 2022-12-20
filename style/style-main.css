@@ -1,52 +1,129 @@
+main {
+    width: 100vw;
+    height: auto;
+}
+
 .container-main{
-    width: 90vw;
+    width: 80%;
     height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;    
+    margin: 20px auto;
 }
 
 .grid-content {
-    width: 1000px;
+    margin: auto 0;
+    height: 40vh;
+    width: auto;
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
-    "big s1 s2 s3"
-    "big s4 s5 s6"
+    "big s1"
+    "big s1"
     ;
+
 }
 
-.grid-content > div:nth-child(1){
+.grid-content-big > div:nth-child(1){
     grid-area: big;
 }
-
 .grid-content > div:nth-child(2){
     grid-area: s1;
 }
-.grid-content > div:nth-child(3){
-    grid-area: s2;
-}
-.grid-content > div:nth-child(4){
-    grid-area: s3;
-}
-.grid-content > div:nth-child(5){
-    grid-area: s4;
-}
-.grid-content > div:nth-child(6){
-    grid-area: s5;
-}.grid-content > div:nth-child(7){
-    grid-area: s6;
+
+.square-content-big {
+    height: 40vh;
+    width: 100%;
+    align-content: right;
 }
 
 .square-content {
-    margin: 10px;
+    height: 40vh;
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.square-content-big > img {
     height: 100%;
-    background: green;
+}
+
+.square-content > img {
+    height: 45%;
+    width: auto;
+    margin-right: 15px;
 }
 
 hr {
     color: blue;
 }
+
+
+@media (max-width: 999px) {
+
+    .grid-content {
+        margin: auto 0;
+        width: auto;
+        max-height: 300%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .square-content-big {
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .square-content-big > img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    .square-content {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    .square-content > img {
+        height: auto;
+        width: 40%;
+        margin: 0;
+    }
+}
+
+
+/* .teste {
+    margin-top: 450px;
+    width: 30vw;
+    height: 30vh;
+    align-content: center;
+
+}
+
+.teste > img{
+    width: 100%;
+}
+
+.teste > div {
+    display: relative;
+    cursor: pointer;
+}
+
+.teste1 {
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.teste1:hover {
+    opacity: 1;
+} */
