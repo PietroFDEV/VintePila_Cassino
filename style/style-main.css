@@ -1,10 +1,31 @@
-main {
-    width: 100vw;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+body {
+    overflow-x: hidden;
+    background-color: #272727;
 }
 
 .container-main{
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    max-width: 1640px;
     display: flex;
     flex-direction: column;    
     justify-content: space-between;
@@ -15,10 +36,7 @@ main {
 .div-first-img {
     margin-top: 25px;
     width: 100%;
-    height: 100%;
     margin: auto;
-    background: gray;
-    /* background-image: url("https://art.pixilart.com/00fbc0437d846a8.png"); */
     background-size: cover;
 }
 
@@ -28,15 +46,16 @@ main {
 .grid-content {
     margin: auto 0;
     margin-top: 3vh;
-    width: auto;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 100%;
     grid-template-areas:
     "big s1"
     "big s1"
     ;
-
+    gap: 5px;
 }
 
 .grid-content-big > div:nth-child(1){
@@ -47,27 +66,101 @@ main {
 }
 
 .square-content-big {
-    height: 50vh;
-    width: 100%;
-    align-content: right;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .square-content {
-    height: 50vh;
     width: 100%;
     display: grid;
     grid: 1fr 1fr / auto-flow;
-    justify-content: space-around;
     gap: 15px;
 }
 
 .square-content-big > img {
-    height: 100%;
+    margin: auto;
+    width: 100%;
 }
 
 .square-content > img {
+
     height: 100%;
-    width: 100%;
+    width: 100%; 
+}
+
+.img-square {
+    width: 100%; 
+}
+
+.square-content > div {
+    margin: auto;
+    width: 100%; 
+
+}
+
+.d-none {
+    display: none;
+}
+
+.btn-all {
+    min-height: 40px;
+    background: orange;
+    transition: all ease .5s;
+    color: #101010;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 10px 20px;
+    width: fit-content;
+    opacity: 1;
+    cursor: pointer;
+    margin: 30px auto;
+}
+
+figura {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.figure-hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: .5s;
+    z-index: 10;
+    float: center;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.figure-hover:before {
+    content: "";
+    position: relative;
+    background-color: #000000bf;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.figure-hover:hover {
+    opacity: 1!important;
+}
+
+.btn-all:hover {
+    opacity: 1;
 }
 
 @media (max-width: 999px) {
@@ -76,20 +169,18 @@ main {
         margin: auto 0;
         margin-top: 3vh;
         width: auto;
-        max-height: 300%;
         display: flex;
         flex-direction: column;
     }
 
     .square-content-big {
+        margin: auto;
         margin-bottom: 10px;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+        width: 90%;
     }
     .square-content-big > img {
         margin: 0;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     
