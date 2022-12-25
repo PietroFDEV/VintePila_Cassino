@@ -42,3 +42,7 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  function changeClass() {
+    document.getElementById("figure-hover").className = "display-block";
+}
