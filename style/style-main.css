@@ -24,6 +24,7 @@ body {
 }
 
 h1 {
+    color: rgba(160, 134, 134, 0.726);
     margin-top: 50px;
     border-bottom: solid gray;
 }
@@ -88,10 +89,11 @@ h1 {
 .square-content-big > img {
     margin: auto;
     width: 100%;
+    border-radius: 10px;
 }
 
 .square-content > img {
-
+    border-radius: 10px 10px 0px 0px;
     height: 100%;
     width: 100%; 
 }
@@ -103,6 +105,7 @@ h1 {
 .square-content > div {
     margin: auto;
     width: 100%; 
+    border-radius: 10px;
 
 }
 
@@ -125,14 +128,6 @@ h1 {
     margin: 30px auto;
 }
 
-figura {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-}
-
 .figure-hover {
     position: relative;
     top: 0;
@@ -143,17 +138,19 @@ figura {
     flex-direction: column;
     justify-content: center;
     opacity: 1;
-    transition:  0.4s ease-in;
+    transition: 0.4s ease-in;
     z-index: 10;
     float: center;
     content: "";
     display: none;
     clear: both;
+    animation: buttonFade 0.4s ease-in;
+    overflow: hidden;
 }
 
 .figure-hover:before {
     content: "";
-    position: relative;
+    position: absolute;
     background-color: #000000bf;
     top: 0;
     left: 0;
@@ -164,6 +161,11 @@ figura {
 
 .figure-hover:hover {
     opacity: 1!important;
+    
+}
+
+.btn-all {
+    margin: auto;
 }
 
 .btn-all:hover {
@@ -172,7 +174,6 @@ figura {
 
 .display-block {
     display: inherit;
-    transition: transform 0.4s ease-in;
 }
 
 @media (max-width: 999px) {
@@ -214,10 +215,12 @@ figura {
 
 @keyframes buttonFade {
     from {
+        display: absolute;
         opacity: 0;
-        transform: translateY(150px);
+        transform: translateY(-100px);
     }
     to {      
+        display: relative;
         opacity: 1;
         transform: translateY(0);
     }
