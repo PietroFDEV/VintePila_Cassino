@@ -77,6 +77,7 @@ h1 {
     height: 100%;
     display: flex;
     justify-content: center;
+
 }
 
 .square-content {
@@ -84,12 +85,14 @@ h1 {
     display: grid;
     grid: 1fr 1fr / auto-flow;
     gap: 15px;
+    cursor: pointer;
 }
 
 .square-content-big > img {
     margin: auto;
     width: 100%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .square-content > img {
@@ -129,11 +132,11 @@ h1 {
 }
 
 .figure-hover {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 240px;
     display: flex;
     flex-direction: column;
     justify-content: center;

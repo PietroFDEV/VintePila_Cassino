@@ -1,0 +1,57 @@
+.grid-content {
+    display: flex;
+}
+
+.square-content {
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    border-radius: 3px;
+}
+
+.card {
+    height: 500px;
+    width: 500px;
+    padding: 6px;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    text-align: center;
+    transition: .5s;
+}
+
+.btn-all {
+    margin: 5px auto;
+    border: none;
+    padding: 10px;
+    width:fit-content;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .figure-hover {
+    height: 220px;
+    bottom: 240px;
+    background: black;
+    transition: .5s;
+
+}
+.card:hover .btn-all {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover img {
+    transform: scale(1.1) rotate(-1deg);
+}
