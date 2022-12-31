@@ -7,19 +7,27 @@
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img {
-    height: 500px;
-    width: 500px;
+    position: relative;
+    height: 12.5%;
+    width: 12.5%;
     border-radius: 3px;
+    z-index: 1;
 }
 
 .card {
     height: 500px;
     width: 500px;
     padding: 6px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 240px;
     background: rgb(27, 27, 27, .5);
     color: white;
@@ -45,7 +53,7 @@ img {
     bottom: 240px;
     background: black;
     transition: .5s;
-
+    z-index: 10;
 }
 .card:hover .btn-all {
     opacity: 1;

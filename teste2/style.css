@@ -1,10 +1,7 @@
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
-
 .media-scroller {
   --_spacer: var(--size-3);
   display: grid;
-  gap: var(--_spacer);
+  gap: 20px;
   grid-auto-flow: column;
   grid-auto-columns: 21%;
 
@@ -37,7 +34,6 @@
 
 .media-element > img {
   inline-size: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 

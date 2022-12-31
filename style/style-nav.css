@@ -26,14 +26,34 @@ a:hover {
 
 /* nav-lists */
 
-nav {
+.nav-one {
+    background: #23232e;
     display: flex;
     padding: 0 5%;
     justify-content: space-between;
     align-items: center;
-    background: #23232e;
     height: 9vh;
     z-index: 3;
+}
+
+.nav-two {
+        background: #7c7c8d;
+        display: flex;
+        padding: 0 5%;
+        justify-content: space-between;
+        align-items: center;
+        height: 7vh;
+        z-index: 3;
+
+}
+
+.pesquisar {
+    height: 50%;
+    border-radius: 25px;
+    border-color: #fff;
+    background-color: #23232e;
+    padding-left: 10px;
+    color: white;
 }
 
 .nav-list {
@@ -92,6 +112,9 @@ nav {
 
     .mobile-menu {
         display: block;
+    }
+    .pesquisar{
+        height: 80%;
     }
 }
 

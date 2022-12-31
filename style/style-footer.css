@@ -6,17 +6,20 @@ footer {
 }
 
 .content-footer {
-    margin: auto;
+    margin: auto 20px;
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
     max-width: 1640px;
     justify-content: space-around;
     color: white;
-    justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    gap: 20px;
 }
 
 .footer-content {
     margin: auto;
+    list-style: none;
+    max-width: 30%;
 }
