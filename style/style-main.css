@@ -15,7 +15,6 @@
   background: #555; 
 }
 /* Handle on hover */
-
 /* generic */
 
   body {
@@ -23,11 +22,18 @@
     background-color: #272727;
 }
 
+a {
+  cursor: pointer;
+}
+
 h1 {
-    color: rgba(160, 134, 134, 0.726);
+    color: rgb(229, 255, 0);
     margin-top: 50px;                                     
     margin-bottom: 25px;
-    border-bottom: solid gray;
+    border-bottom: solid rgb(255, 238, 7);
+    border-radius: 3px;
+    padding-left: 20px;
+    background: linear-gradient(90deg,rgba(255, 238, 7, 0)50%,rgba(255, 238, 7, 0.6)) ;
 }
 
 .container-main{
@@ -190,14 +196,9 @@ h1 {
     gap: 20px;
     grid-auto-flow: column;
     grid-auto-columns: 21%;
-  
     padding: 0;
-  
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-
-
-    
   }
 
 .img-hover{
@@ -252,6 +253,17 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .media-element-scroll > div:nth-child(2) {
+    background: linear-gradient(rgba(28, 255, 7, 0.11)50%,rgba(28, 255, 7, 0.726)) ;
+  }
+
+  .container-background {
+    height: 100%;
+    bottom: 100%;
+    background: rgba(0, 0, 0, 0.726);
+    z-index: 11;
   }
 
   .media-element-scroll:hover .btn-all{

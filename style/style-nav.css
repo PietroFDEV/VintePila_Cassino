@@ -5,9 +5,10 @@
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+    color: rgb(235, 235, 235);
+    text-decoration: solid;
     transition: 0.3s;
+
 }
 
 a:hover {
@@ -44,7 +45,7 @@ a:hover {
         align-items: center;
         height: 7vh;
         z-index: 3;
-
+        box-shadow: #23232e;
 }
 
 .pesquisar {
@@ -59,10 +60,13 @@ a:hover {
 .nav-list {
     list-style: none;
     display: flex;
+    height: 100%;
+    justify-content: space-around;
 }
 
 .nav-list li {
     letter-spacing: 3px;
+    margin: auto;
     margin-left: 32px;
 }
 

@@ -23,3 +23,13 @@ footer {
     list-style: none;
     max-width: 30%;
 }
+
+@media (max-width: 999px) {
+    .content-footer {
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .footer-content {
+        max-width: 80%;
+    }
+}
