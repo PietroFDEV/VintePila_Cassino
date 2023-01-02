@@ -46,3 +46,20 @@ class MobileNavbar {
   function changeClass() {
     document.getElementById("figure-hover").classList.toggle("display-block");
 }
+
+const randomNumber1 = parseInt(Math.random() * 255);
+const randomNumber2 = parseInt(Math.random() * 255);
+const randomNumber3 = parseInt(Math.random() * 255);
+
+const containerBtn =
+document.querySelector(".container-btn");
+containerBtn.style.setProperty('--random-color1', randomNumber1);
+containerBtn.style.setProperty('--random-color2', randomNumber2);
+containerBtn.style.setProperty('--random-color3', randomNumber3);
+
+const containerBtnClass =
+document.querySelector("#bk-random");
+containerBtnClass.style.setProperty('--random-color2', randomNumber1);
+containerBtnClass.style.setProperty('--random-color3', randomNumber2);
+containerBtnClass.style.setProperty('--random-color1', randomNumber3);
+// background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.726)) ;
