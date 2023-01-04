@@ -1,7 +1,8 @@
 class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
+    constructor(mobileMenu, navList, navLinks, navList2) {
       this.mobileMenu = document.querySelector(mobileMenu);
       this.navList = document.querySelector(navList);
+      this.navList2 = document.querySelector(navList2);
       this.navLinks = document.querySelectorAll(navLinks);
       this.activeClass = "active";
   
@@ -20,6 +21,7 @@ class MobileNavbar {
   
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
+      this.navList2.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
     }
@@ -50,16 +52,6 @@ class MobileNavbar {
 const randomNumber1 = parseInt(Math.random() * 255);
 const randomNumber2 = parseInt(Math.random() * 255);
 const randomNumber3 = parseInt(Math.random() * 255);
-
-const containerBtn =
-document.querySelector(".container-btn");
-containerBtn.style.setProperty('--random-color1', randomNumber1);
-containerBtn.style.setProperty('--random-color2', randomNumber2);
-containerBtn.style.setProperty('--random-color3', randomNumber3);
-
-const containerBtnClass =
-document.querySelector("#bk-random");
-containerBtnClass.style.setProperty('--random-color2', randomNumber1);
-containerBtnClass.style.setProperty('--random-color3', randomNumber2);
-containerBtnClass.style.setProperty('--random-color1', randomNumber3);
-// background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.726)) ;
+document.documentElement.style.setProperty('--random-color1', randomNumber1);
+document.documentElement.style.setProperty('--random-color2', randomNumber2);
+document.documentElement.style.setProperty('--random-color3', randomNumber3);

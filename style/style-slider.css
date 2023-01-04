@@ -1,0 +1,77 @@
+/*SLIDER SLIDER*/
+.content-slider{
+    height: 520px;
+
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.3);
+}
+
+.navigator-slide{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.lbl-slide{
+     width: 70px;
+     height: 17px;
+     border: 2.5px solid white;
+     margin: 6px;
+     border-radius: 9px;
+     cursor: pointer;
+     transition: .1s;
+     z-index: 5;
+}
+
+.lbl-slide:hover{
+    background: white;
+}
+
+.input-slider{
+    display: none;
+}
+
+.slider-img{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide-img{
+    width: 33.3%;
+    transition: .5s;
+    /* justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    background-image: url(/img/hoyo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-img > img {
+    opacity: 0;
+    margin: auto;
+}
+
+#slide-1:checked ~ .s1{
+    margin-left: 0%;
+}
+
+#slide-2:checked ~ .s1{
+    margin-left: -33.3%;
+}
+
+#slide-3:checked ~ .s1{
+    margin-left: -66.6%;
+}
+
+#slide-4:checked ~ .s1{
+    margin-left: -100%;
+}
+/*SLIDER SLIDER*/

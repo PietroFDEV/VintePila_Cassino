@@ -264,8 +264,18 @@ h1 {
   }
 
 
-  .media-element-scroll > div:nth-child(2) {
+  /* .media-element-scroll > div:nth-child(2) {
     background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.726)) ;  
+  } */
+
+  .bkg-1 {
+    background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.8)) ;  
+  }
+  .bkg-2 {
+    background: linear-gradient(rgba(var(--random-color2), var(--random-color3), var(--random-color1), 0.11)50%,rgba(var(--random-color2), var(--random-color3), var(--random-color1), 0.8)) ;  
+  }
+  .bkg-3 {
+    background: linear-gradient(rgba(var(--random-color3), var(--random-color1), var(--random-color2), 0.11)50%,rgba(var(--random-color2), var(--random-color1), var(--random-color2), 0.8)) ;  
   }
 
   .media-element-scroll:hover .btn-all{
