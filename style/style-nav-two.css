@@ -74,7 +74,7 @@ a:hover {
         box-shadow: #23232e;
 }
 
-.nav-two > .nav-list > li > a {
+.nav-two > .nav-list-two> li > a {
     font-size: 14px;
     font-weight: 900;
     color: rgb(66, 66, 66);
@@ -89,14 +89,14 @@ a:hover {
     color: white;
 }
 
-.nav-list {
+.nav-list-two{
     list-style: none;
     display: flex;
     height: 100%;
     justify-content: space-around;
 }
 
-.nav-list li {
+.nav-list-twoli {
     letter-spacing: 3px;
     margin: auto;
     margin-left: 32px;
@@ -125,7 +125,7 @@ a:hover {
 /* mobile-menu when mobile aplication */
 
 @media (max-width: 999px) {
-     .nav-list-one {
+    .nav-list-two {
         position: absolute;
         top: 9vh;
         right: 0;
@@ -138,9 +138,10 @@ a:hover {
         transform: translateX(150%);
         transition: transform 0.4s ease-in;
         z-index: 1;
+        overflow: hidden;
     }
 
-    .nav-list-one li {
+    .nav-list-two li {
         margin-left: 0;
         margin-top: 40px;
         opacity: 0;

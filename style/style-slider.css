@@ -1,8 +1,8 @@
 /*SLIDER SLIDER*/
 .content-slider{
     height: 520px;
-
-    width: 100%;
+    margin-top: 30px;
+    width: 90%;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
@@ -20,7 +20,7 @@
 .lbl-slide{
      width: 70px;
      height: 17px;
-     border: 2.5px solid white;
+     border: 2.5px solid rgb(252, 249, 67);
      margin: 6px;
      border-radius: 9px;
      cursor: pointer;
@@ -39,14 +39,15 @@
 .slider-img{
     display: flex;
     width: 400%;
+    margin: auto;
     height: 100%;
 }
 
 .slide-img{
-    width: 33.3%;
+    width: 25%;
     transition: .5s;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     background-image: url(/img/hoyo.png);
     background-repeat: no-repeat;
@@ -64,14 +65,14 @@
 }
 
 #slide-2:checked ~ .s1{
-    margin-left: -33.3%;
+    margin-left: -25%;
 }
 
 #slide-3:checked ~ .s1{
-    margin-left: -66.6%;
+    margin-left: -50%;
 }
 
 #slide-4:checked ~ .s1{
-    margin-left: -100%;
+    margin-left: -75%;
 }
 /*SLIDER SLIDER*/
