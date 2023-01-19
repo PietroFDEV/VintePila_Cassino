@@ -22,10 +22,7 @@
     background-color: #272727;
 }
 
-a {    
-  color: rgb(235, 235, 235);
-  text-decoration: solid;
-  transition: 0.3s;
+a {
   cursor: pointer;
 }
 
@@ -59,6 +56,7 @@ h1 {
   height: 500px;
   width: 500px;
   padding: 6px;
+  /* position: absolute; */
   bottom: 240px;
   background: rgb(27, 27, 27, .5);
   color: white;
@@ -265,6 +263,11 @@ h1 {
     transform: translate(-50%, -50%);
   }
 
+
+  /* .media-element-scroll > div:nth-child(2) {
+    background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.726)) ;  
+  } */
+
   .bkg-1 {
     background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.8)) ;  
   }
@@ -306,9 +309,6 @@ h1 {
 
 /* media */
 @media (max-width: 999px) {
-main {
-  margin-top: 16vh;
-}
 
 .grid-content {
   margin: auto 0;

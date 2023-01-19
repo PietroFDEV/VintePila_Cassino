@@ -58,6 +58,7 @@ document.documentElement.style.setProperty('--random-color1', randomNumber1);
 document.documentElement.style.setProperty('--random-color2', randomNumber2);
 document.documentElement.style.setProperty('--random-color3', randomNumber3);
 
+//SLIDER
 $('.center').slick({
   centerMode: true,
   centerPadding: '60px',
@@ -83,6 +84,23 @@ $('.center').slick({
     }
   ]
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var buttonB = document.getElementById("action-btnB");
 

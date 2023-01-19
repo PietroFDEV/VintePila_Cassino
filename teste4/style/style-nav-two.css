@@ -4,6 +4,13 @@
     overflow-x: hidden;
 }
 
+a {
+    color: rgb(235, 235, 235);
+    text-decoration: solid;
+    transition: 0.3s;
+
+}
+
 a:hover {
     opacity: 0.7;
     color: rgb(255, 190, 50);
@@ -13,18 +20,48 @@ a:hover {
 
 /* logo-nav */
 
+.logo {
+   font-size: 24px;
+   /* text-transform: uppercase; */
+   letter-spacing: 4px; 
+   height: 90%;
+   overflow: hidden;
+}
+    
 .logo > img {
-    max-height: 8vh;
+    max-height: 90%;
     max-width: 90%;
 }
 
 .search-icon {
-    margin: 10px;
-    height: 3vh;}
+    margin: auto;
+    height:7vh;
+}
 
 
 
 /* nav-lists */
+
+.nav-imgs {
+    display: flex;
+    justify-content: space-around;
+    height: 9vh;
+    width: 17.5%;
+    align-items: center;
+    padding: 3%;
+    gap: 3%;
+}
+
+.nav-one {
+    background: #23232e;
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    z-index: 3;
+    overflow: hidden;
+}
 
 .nav-two {
         background: #7c7c8d;
@@ -38,9 +75,9 @@ a:hover {
 }
 
 .nav-two > .nav-list-two> li > a {
-    font-size: 80%;
+    font-size: 14px;
     font-weight: 900;
-    color: rgb(255, 206, 70);
+    color: rgb(66, 66, 66);
 }
 
 .pesquisar {
@@ -57,10 +94,11 @@ a:hover {
 .nav-list-two{
     list-style: none;
     display: flex;
+    height: 100%;
     justify-content: space-around;
 }
 
-.nav-list-two li {
+.nav-list-twoli {
     letter-spacing: 3px;
     margin: auto;
     margin-left: 32px;
@@ -86,96 +124,15 @@ a:hover {
     transition: 0.3s;
 }
 
-.nav-pesquisar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.pesquisar {
-    height: 90%;
-}
-/* nav-lists */
-
-.nav-imgs {
-    display: flex;
-    /* justify-content: space-around; */
-    height: 100%;
-    /* width: 17.5%; */
-    align-items: center;
-    align-content: center;
-    padding: 3%;
-    gap: 3%;
-    overflow: hidden;
-}
-
-.nav-one {
-    background: #23232e;
-    display: flex;
-    padding: 0 5%;
-    justify-content: space-between;
-    align-items: center;
-    height: 9vh;
-    z-index: 3;
-    overflow: hidden;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    justify-content: space-around;
-}
-
-.nav-list li {
-    letter-spacing: 3px;
-    margin: auto;
-}
-
-.nav-list.active {
-    display: visible;
-    transform: translateX(0);
-}
-
-/* mobile-menu */
-
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div {
-    /* width: 32px; */
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-}
-
 /* mobile-menu when mobile aplication */
 
 @media (max-width: 999px) {
-    nav {
-        position: fixed;
-        z-index: 10;
-        width: 100%;
-        height: 16vh;
-    }
-
-    .nav-list-one > li > a {
-        font-size: 5vw;
-    }
-
-    .nav-two > .nav-list-two> li > a {
-        font-size: 3vw;
-    }
-
     .nav-list-two {
-        position: fixed;
+        position: absolute;
         top: 9vh;
         right: 0;
-        width: 45vw;
-        height: 91vh;
+        width: 36vw;
+        height: 92vh;
         background: #2C2C3A;
         flex-direction: column;
         align-items: center;
@@ -183,10 +140,11 @@ a:hover {
         transform: translateX(150%);
         transition: transform 0.4s ease-in;
         z-index: 1;
+        overflow: hidden;
     }
 
     .nav-list-two li {
-        margin-left: 10px;
+        margin-left: 0;
         margin-top: 40px;
         opacity: 0;
     }
@@ -196,19 +154,6 @@ a:hover {
     }
     .pesquisar{
         height: 90%;
-    }
-
-}
-
-@media (max-width: 806px) {
-    .nav-list-one > li > a {
-        font-size: 3vw;
-    }
-}
-
-@media (max-width: 599) {
-    .nav-list-one > li > a {
-        font-size: 2vw;
     }
 }
 

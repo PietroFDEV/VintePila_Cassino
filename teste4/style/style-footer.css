@@ -1,0 +1,35 @@
+footer {
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    background: #23232e;
+}
+
+.content-footer {
+    margin: auto 20px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 1640px;
+    justify-content: space-around;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.footer-content {
+    margin: auto;
+    list-style: none;
+    max-width: 30%;
+}
+
+@media (max-width: 999px) {
+    .content-footer {
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+    .footer-content {
+        max-width: 80%;
+    }
+}
