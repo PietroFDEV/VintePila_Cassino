@@ -6,7 +6,7 @@ footer {
 }
 
 .content-footer {
-    margin: auto 20px;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -21,15 +21,69 @@ footer {
 .footer-content {
     margin: auto;
     list-style: none;
-    max-width: 30%;
 }
+
+.footer-content-logo {
+    display: flex;
+    flex-direction: space-between;
+    gap: 4px;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-content-list {
+    display: flex;
+    flex-direction: space-between;
+    gap: 4px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.footer-content-list > ul {
+width: 100%;
+text-align: center;
+}
+
+
+.footer-content-end {
+    display: flex;
+}
+.footer-content-end > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.footer-content-end > div > p {
+    margin: 5%;
+    font-size: 90%;
+}
+.footer-img-end {
+    width: 90%;
+    margin: auto;
+}
+
 
 @media (max-width: 999px) {
     .content-footer {
         flex-flow: column wrap;
         justify-content: space-between;
     }
+    .footer-content-list {
+        display: flex;
+        flex-direction:column;
+        gap: 4px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
     .footer-content {
         max-width: 80%;
+    }
+    .footer-content-end {
+        display: flex;
+        flex-direction: column;
     }
 }

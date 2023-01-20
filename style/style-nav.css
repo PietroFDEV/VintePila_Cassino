@@ -64,6 +64,31 @@ a:hover {
     letter-spacing: 3px;
     margin: auto;
     margin-left: 32px;
+    height: 100%;
+    background-color: #47391b;
+    padding: auto;
+}
+
+.nav-list-two > li:hover {
+    transform: translateY(35px);
+}
+
+
+.nav-list-one > li > a > button {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #ffca2b 5%, #c19725 100%);
+	background-color:#ffba31;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    width: 100%;
 }
 
 .nav-list.active {
@@ -183,6 +208,9 @@ a:hover {
         transform: translateX(150%);
         transition: transform 0.4s ease-in;
         z-index: 1;
+    }
+    .nav-two {
+        background-color: transparent;
     }
 
     .nav-list-two li {
