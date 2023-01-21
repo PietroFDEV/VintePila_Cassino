@@ -307,7 +307,7 @@ h1 {
 /* media */
 @media (max-width: 999px) {
 main {
-  margin-top: 16vh;
+  margin-top: 6vh;
 }
 
 .grid-content {
