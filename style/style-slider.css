@@ -5,27 +5,46 @@
     display: flex;
     flex-direction: column;
 }
-
 /*SLIDER SLIDER*/
-
 .sliderB {
     width: 95%;
     height: auto;
     overflow: hidden;
     margin: auto;
     border-radius: 5px;
-    /* position: fixed;
-    margin: auto;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    border-radius: 15px; */
 }
-
-
-
+.pesquisar {
+    width: 95%;
+    height: 37px;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-color: #fff;
+    background-color: #23232e;
+    padding-left: 10px;
+    color: white;
+}
 .sliderB>img {
     width: 100%;
     height: auto;
 }
+.select-search {
+    border-radius: 15px;
+    background: linear-gradient(90deg,#ff9100,#f8b55d);
+    height: 39px;
+    padding: 0px 20px 0px 12px;
+    color: rgb(0, 0, 0);
+    text-indent: 0.01px;
+    text-overflow: "";
+  }
+  .select-search::-ms-expand  {
+    display: none;
+  }
+  .flex-content {
+    display: flex;
+    gap: 1vw;
+    overflow: hidden;
+  }
+  .flex-content > select, .flex-content > input {
+    margin: auto;
+  }

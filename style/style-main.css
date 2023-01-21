@@ -2,33 +2,22 @@
   width: 10px;
   height: 3vh;
   margin: 30px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
-}
-     
-/* Handle */
+}  
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
-/* Handle */
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-/* Handle on hover */
 /* generic */
-
   body {
     overflow-x: hidden;
     background-color: #272727;
 }
-
 a {    
-  color: rgb(235, 235, 235);
   text-decoration: solid;
-  transition: 0.3s;
   cursor: pointer;
 }
-
 h1 {
     color: rgb(229, 255, 0);
     margin-top: 50px;                                     
@@ -38,7 +27,6 @@ h1 {
     padding-left: 20px;
     background: linear-gradient(90deg,rgba(255, 238, 7, 0)50%,rgba(255, 238, 7, 0.6)) ;
 }
-
 .container-main{
     width: 95%;
     max-width: 1640px;
@@ -48,13 +36,8 @@ h1 {
     margin: auto;
     align-items: center;
 }
-
-
-
 /* generic */
-
 /* containers */
-
 .media-element {
   height: 500px;
   width: 500px;
@@ -65,17 +48,12 @@ h1 {
   text-align: center;
   transition: .5s;
 }
-
 .div-first-img {
   margin-top: 25px;
   width: 100%;
   margin: auto;
   background-size: cover;
 }
-
-
-
-
 .grid-content {
   margin: auto 0;
   margin-top: 3vh;
@@ -92,21 +70,18 @@ h1 {
   overflow: hidden;
   justify-content: space-between;
 }
-
 .grid-content-big > div:nth-child(1){
   grid-area: big;
 }
 .grid-content > div:nth-child(2){
   grid-area: s1;
 }
-
 .square-content-big {
   height: 100%;
   display: flex;
   justify-content: center;
 
 }
-
 .square-content {
   width: 100%;
   display: grid;
@@ -114,35 +89,29 @@ h1 {
   gap: 15px;
   cursor: pointer;
 }
-
 .square-content-big > img {
   margin: auto;
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
-
 .square-content > img {
   border-radius: 10px;
   height: 100%;
   width: 100%; 
 }
-
 .img-square {
   width: 100%; 
 }
-
 .square-content > div {
   margin: auto;
   width: 100%; 
   border-radius: 10px;
 
 }
-
 .d-none {
   display: none;
 }
-
 .btn-all {
   width:fit-content;
   background: orange;
@@ -160,7 +129,6 @@ h1 {
   top: 45%;
   left: 40%;
 }
-
 .figure-hover {
   position: absolute;
   top: 0;
@@ -180,9 +148,7 @@ h1 {
   animation: buttonFade 0.4s ease-in;
   overflow: hidden;
 }
-
 /* containers */
-
 /* scroller */
 .div-container-main {
   margin-top: 25px;
@@ -192,7 +158,6 @@ h1 {
   background-size: cover;
   margin-bottom: 30px;
 }
-
 .media-scroller {
     display: grid;
     gap: 20px;
@@ -202,16 +167,13 @@ h1 {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   }
-
 .img-hover{
     position: absolute;
 }
-  
   .media-group {
     display: grid;
     grid-auto-flow: column;
   }
-
   .media-element-scroll {
     margin: auto;
     position: relative;
@@ -221,29 +183,23 @@ h1 {
     overflow: hidden;
     border-radius: 5px;
   }
-
   .media-element-scroll > img {
     inline-size: 100%;
     object-fit: cover;
   }
-  
   .snaps-inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: var(25px, 1rem);
   }
-  
   .snaps-inline > * {
     scroll-snap-align: start;
   }
-
 :root {
   --random-color1: 28;
   --random-color2: 255;
   --random-color3: 7;
   
 }
-
-
   .media-element-scroll:hover .container-btn {
     height: 100%;
     bottom: 100%;
@@ -252,7 +208,6 @@ h1 {
     z-index: 10;
     
   }
-
   .container-btn {
     display: flex;
     justify-content: space-around;
@@ -264,7 +219,6 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   .bkg-1 {
     background: linear-gradient(rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.11)50%,rgba(var(--random-color1), var(--random-color2), var(--random-color3), 0.8)) ;  
   }
@@ -274,19 +228,15 @@ h1 {
   .bkg-3 {
     background: linear-gradient(rgba(var(--random-color3), var(--random-color1), var(--random-color2), 0.11)50%,rgba(var(--random-color2), var(--random-color1), var(--random-color2), 0.8)) ;  
   }
-
   .media-element-scroll:hover .btn-all{
     opacity: 1;
     visibility: visible;
   }
-
   .media-element-scroll:hover #img-hover{
     transform: scale(1.05);
   }
 /* scroller */
-
 /* body */
-
 .grid-content-rest {
   margin: auto 0;
   margin-top: 3vh;
@@ -296,68 +246,56 @@ h1 {
   overflow: hidden;
   justify-content: space-around;
 }
-
 .grid-content-rest > .square-content > .card {
   max-width: 100%;
-
 }
-
 /* body */
-
 /* media */
 @media (max-width: 999px) {
-main {
-  margin-top: 6vh;
+  main {
+    margin-top: 6vh;
+  }
+  .grid-content {
+    margin: auto 0;
+    margin-top: 3vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    margin: 30px auto;
+    width: 90%;
+  }
+  .square-content-big > .media-element-scroll {
+    width: 90%;
+  }
+  .square-content-big {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .square-content-big > .media-element-scroll > img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .square-content > div {
+    width: 45%;
+  }
+  .square-content {
+    margin: auto;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 15px;
+  }
+  .card > img {
+    height: auto;
+    margin: 0;
+  }
 }
-
-.grid-content {
-  margin: auto 0;
-  margin-top: 3vh;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  margin: 30px auto;
-  width: 90%;
-}
-
-.square-content-big > .media-element-scroll {
-  width: 90%;
-}
-
-.square-content-big {
-  margin: auto;
-  margin-bottom: 10px;
-  width: 90%;
-}
-.square-content-big > .media-element-scroll > img {
-  margin: 0;
-  width: 100%;
-  height: auto;
-}
-
-.square-content > div {
-  width: 45%;
-}
-
-.square-content {
-  margin: auto;
-  height: auto;
-  width: 90%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  gap: 15px;
-}
-
-.card > img {
-  height: auto;
-  margin: 0;
-}
-}
-
 @keyframes buttonFade {
 from {
   display: absolute;

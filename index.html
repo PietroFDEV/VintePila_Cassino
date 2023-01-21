@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style-nav.css">
     <link rel="stylesheet" href="style/style-main.css"> 
+    <link rel="stylesheet" href="style/style-nav.css">
     <link rel="stylesheet" href="style/style-footer.css">
     <link rel="stylesheet" href="style/style-slider.css">
     <link rel="stylesheet" type="text/css" href="/fonts/slick-theme.css"/>
@@ -16,25 +16,21 @@
     <header>
         <nav>
             <div class="nav-one">
-            <!-- logo -->
             <div class="nav-imgs">
                 <a href="/" class="logo link"><img src="/img/Logo.png" alt=""></a>
                 <a href="/" class="logo link"><img src="/img/Bonds.png" alt=""></a>
             </div>
-            <!-- list-words -->
             <ul class="nav-list nav-list-one">
-                <li><a class="link" href="/"> <button>ENTRAR</button> </a></li>
-                <li><a class="link" href="/"><button>CADASTRAR-SE</button> </a></li>
+                <li><a class="link" href="/"><button>ENTRAR</button> </a></li>
+                <li><a class="link" href="/"><button>CADASTRAR-SE</button></a></li>
             </ul>   
-            <!-- mobile-menu -->
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             </div>
-            <div class="nav-two">
-                <!-- logo -->
+            <!-- <div class="nav-two">
                 <ul class="nav-list nav-list-two">
                     <li><a href="/" class="logo link">POKER</a></li>
                     <li><a href="/" class="logo link">VIDEO BINGO</a></li>
@@ -42,6 +38,17 @@
                     <li><a href="/" class="logo link">SALA DE BINGO</a></li>
                     <li><a href="/" class="logo link">ESPORTES</a></li>
                     <li><a href="/" class="logo link">PROMOÇOES</a></li>
+                </ul>
+            </div> -->
+
+            <div class="nav-two">
+                <ul class="nav-list nav-list-two">
+                    <li class="list"><a href="#">POKER</a><div></div></li>
+                    <li class="list"><a href="#">VIDEO BINGO</a><div></div></li>
+                    <li class="list"><a href="#">CASINO</a><div></div></li>
+                    <li class="list"><a href="#">SALA DE BINGO</a><div></div></li>
+                    <li class="list"><a href="#">ESPORTES</a><div></div></li>
+                    <li class="list"><a href="#">PROMOÇOES</a><div></div></li>
                 </ul>
             </div>
         </nav>
@@ -60,7 +67,18 @@
                     <img src="/img/bk.png">
                 </ul>
 
-                <input class="pesquisar" placeholder="Procurar" type="text">
+                <div class="flex-content">
+                    <select class="select-search">
+                        <option value="0">TODOS OS JOGOS</option>
+                        <option value="1">HOT GAMES</option>
+                        <option value="2">NOVOS JOGOS</option>
+                        <option value="3">ORDEM ALFABÉTICA</option>
+                        <option value="4">EM DESTAQUE</option>
+                      </select>
+                      <input class="pesquisar" placeholder="Procurar" type="text">
+
+                </div>
+
 
         </div>
         <div class="container-main">
@@ -364,10 +382,10 @@
                 <div class="footer-content-end">
                     <img class="footer-img-end footer-img-show" src="/img/Logo.png" alt="">
                     <div>
-                        <p>O Playbonds.com é operado pela Maxxi Media NV. A Maxxi Media NV. é membro da CIGA  Curação Internet Gaming Association, que estabelece os requerimentos para a Licença de Gambling. O número da Licença de Gambling é: 8048/JAZ.</p>
-                        <p>Apostar pode causar dependência. Jogue com responsabilidade.</p>
-                        <p>Jogar é proibido em alguns países, verifique a legislação do seu país.</p>
-                        <p>Proibido para menores de 18 anos.</p>
+                        <h3>O Playbonds.com é operado pela Maxxi Media NV. A Maxxi Media NV. é membro da CIGA  Curação Internet Gaming Association, que estabelece os requerimentos para a Licença de Gambling. O número da Licença de Gambling é: 8048/JAZ.</h3>
+                        <h3>Apostar pode causar dependência. Jogue com responsabilidade.</h3>
+                        <h3>Jogar é proibido em alguns países, verifique a legislação do seu país.</h3>
+                        <h3>Proibido para menores de 18 anos.</h3>
                     </div>
                     <img class="footer-img-end footer-img-show" src="/img/Logo.png" alt="">
                     <div id="footer-content-mobile">
