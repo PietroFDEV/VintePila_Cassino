@@ -26,10 +26,15 @@ footer {
 .footer-content-logo {
     display: flex;
     flex-direction: space-between;
-    gap: 4px;
-    width: 100%;
+    width: 90%;
+    height: 15vh;
     margin: auto;
+    gap: 4px;
     margin-bottom: 5vh;
+}
+.footer-logos {
+    margin: auto;
+    max-height: 100%;
 }
 
 .footer-content-list {

@@ -182,6 +182,7 @@ h1 {
     cursor: pointer;
     overflow: hidden;
     border-radius: 5px;
+    min-height: 25%;
   }
   .media-element-scroll > img {
     inline-size: 100%;
@@ -241,19 +242,21 @@ h1 {
   margin: auto 0;
   margin-top: 3vh;
   width: 100%;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   overflow: hidden;
   justify-content: space-around;
 }
-.grid-content-rest > .square-content > .card {
-  max-width: 100%;
+.grid-content-rest  > .card {
+  max-width: 15%;
 }
 /* body */
 /* media */
 @media (max-width: 999px) {
   main {
-    margin-top: 6vh;
+    margin-top: 8vh;
   }
   .grid-content {
     margin: auto 0;
@@ -265,9 +268,13 @@ h1 {
   h1 {
     margin: 30px auto;
     width: 90%;
+    font-size: 150%;
   }
   .square-content-big > .media-element-scroll {
     width: 90%;
+  }
+  .grid-content-rest  > .card {
+    max-width: 45%;
   }
   .square-content-big {
     margin: auto;
@@ -295,6 +302,12 @@ h1 {
     height: auto;
     margin: 0;
   }
+  .display-show {
+    display: flex;
+}
+.select-search {
+  font-size: 50%;
+}
 }
 @keyframes buttonFade {
 from {

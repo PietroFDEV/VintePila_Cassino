@@ -28,23 +28,53 @@
     width: 100%;
     height: auto;
 }
+.flex-content select {
+  background-color: #ff9100;
+  border-radius: 15px;
+}
 .select-search {
     border-radius: 15px;
     background: linear-gradient(90deg,#ff9100,#f8b55d);
     height: 39px;
     padding: 0px 20px 0px 12px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-indent: 0.01px;
-    text-overflow: "";
+    font-size: 100%;
+    max-width: 50%;
   }
   .select-search::-ms-expand  {
     display: none;
   }
   .flex-content {
+    position: relative;
     display: flex;
     gap: 1vw;
     overflow: hidden;
+    justify-content: center;
   }
   .flex-content > select, .flex-content > input {
     margin: auto;
+  }
+  .search-icon{
+    position: absolute;
+    height: 80%;
+    margin: auto;
+    top: 10%;
+    right: 1%;
+    overflow: hidden;
+  }
+  .search-icon > img {
+    height: 100%;
+    width: auto;
+  }
+  @media (max-width: 999px) {
+    .select-search {
+      font-size: 50%;
+    }
+    .search-icon {
+      right: 9%;
+    }
+    .search-icon > img {
+      width: 100%;
+    }
   }
