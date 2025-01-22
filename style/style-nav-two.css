@@ -58,9 +58,26 @@
     top: -90px;
     width: 100%;
     height: 100%;
-    background: rgb(255, 147, 45);
     border-radius: 10px;
 }
+#indicater-cor1::before{
+    background-color: #2D3991;
+  }
+  #indicater-cor1::before{
+    background-color: #AD48AE;
+  }
+  #indicater-cor1::before{
+    background-color: #9DB714;
+  }
+  #indicater-cor1::before{
+    background-color: #CD3059;
+  }
+  #indicater-cor1::before{
+    background-color: #00A0D4;
+  }
+  #indicater-cor1::before{
+    background-color: #FFA901;
+  }
 
 .display-none {
     display: none;
